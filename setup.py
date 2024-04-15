@@ -25,7 +25,10 @@ setup(
         "tqdm",
         "loguru",
         "lightgbm"
-    ],  # And any other dependencies foo needs
+    ],  # And any other dependencies for needs
     entry_points={
+        "console_scripts": [
+            "tsl = spark_learning.main:main"
+        ],
     },
 )
