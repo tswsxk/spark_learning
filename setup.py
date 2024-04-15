@@ -24,7 +24,8 @@ setup(
         "dill",
         "tqdm",
         "loguru",
-        "lightgbm"
+        "lightgbm",
+        "jupyter"
     ],  # And any other dependencies for needs
     entry_points={
         "console_scripts": [
