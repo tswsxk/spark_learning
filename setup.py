@@ -8,9 +8,7 @@ test_deps = [
 ]
 
 spider_deps = [
-    "google-cloud-bigquery",
-    "selenium",
-    ""
+    "google-api-python-client",
 ]
 
 setup(
