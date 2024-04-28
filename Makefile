@@ -13,9 +13,9 @@ else
 endif
 
 ifdef ENVPYTEST
-    PYTEST = $(ENVPYTEST)
+    PYTEST = flake8 && $(ENVPYTEST)
 else
-    PYTEST = pytest
+    PYTEST = flake8 && pytest
 endif
 
 help:

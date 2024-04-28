@@ -4,7 +4,7 @@
 from fire import Fire
 
 
-def show_importance(modelpath):
+def show_importance(modelpath):  # pragma: no cover
     from spark_learning.utils.models import load_model
     from spark_learning.lgbm import get_feature_importance
     from pprint import pprint
@@ -12,7 +12,7 @@ def show_importance(modelpath):
     pprint(get_feature_importance(load_model(modelpath)))
 
 
-def main():
+def main():  # pragma: no cover
     Fire({
         "lgb": {"imp": show_importance}
     })
