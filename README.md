@@ -41,6 +41,14 @@ If you see `*** Spark ***` in the terminal, then everything goes well.
 
 Then, run the notebook `eda.ipynb` in `scripts/EDA`
 
+**NOTICE: Download the data before you run the scripts:**
+```
+data/
+├── test_X.xlsx
+├── test_y.xlsx
+└── train.xlsx
+```
+
 3. The following parts are optional
 
 * Run tests
