@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 test_deps = [
     'pytest>=4',
@@ -13,6 +13,11 @@ spider_deps = [
 setup(
     name='spark_learning',
     version='0.0.1',
+    packages=find_packages(
+        include=[
+            "spark_learning", "spark_learning.*"
+        ],
+    ),
     extras_require={
         'test': test_deps,
         'spider': spider_deps
@@ -24,7 +29,10 @@ setup(
         "tqdm",
         "loguru",
         "lightgbm",
-        "jupyter"
+        "jupyter",
+        "openpyxl",
+        "matplotlib",
+        "fire",
     ],  # And any other dependencies for needs
     entry_points={
         "console_scripts": [
