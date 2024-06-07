@@ -54,7 +54,7 @@ data/
 * Run tests
 
 ```bash
-pip install -e .[test]
+pip install -e .[test] --config-settings editable_mode=compat
 pytest
 ```
 
