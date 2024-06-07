@@ -33,6 +33,7 @@ setup(
         "openpyxl",
         "matplotlib",
         "fire",
+        'db-dtypes',
     ],  # And any other dependencies for needs
     entry_points={
         "console_scripts": [
