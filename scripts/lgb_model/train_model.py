@@ -48,6 +48,7 @@ def transform_input_raw(dataset: pd.DataFrame, encoder: (str, CatEncoder), with_
 
 
 def train_pheat_demo():
+    logging.info("loading training data")
     dataset = pd.read_excel("../../data/train.xlsx")
 
     dataset = transform_input_raw(dataset, "cat_encoder.dill", update_encoder=True)

@@ -33,7 +33,7 @@ help:
 
 install:
 	@echo "install spark_learning"
-	$(PIP) install -e . --user
+	$(PIP) install -e . --user --config-settings editable_mode=compat
 
 test:
 	@echo "run test"
