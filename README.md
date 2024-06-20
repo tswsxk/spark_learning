@@ -65,6 +65,11 @@ pytest
 tsl lgb imp scripts/lgb_model/lgb.dill
 ```
 
-## Trouble Shooter
+### Troubleshooter
 
-1. For M1/M2/M3 mac users, use `conda` to install lightgbm if you found there is no usable one: `conda install -c conda-forge lightgbm`
+1. **For M1/M2/M3 Mac Users**: If you encounter issues with installing LightGBM, create a conda virtual environment, and install it using `conda`: 
+   ```sh
+   conda install -c conda-forge lightgbm
+   ```
+
+2. **File Not Found Error**: If you see an error like `"No such file or directory: '../../data/train.xlsx'"` after placing the files in the `data` directory, ensure that you are running the script from its directory (e.g., `.../spark_learning/scripts/lgb_model`) rather than the project root (e.g., `.../spark_learning`). Note that VSCode's default behavior is to use the project directory, so run the script from the command line instead.

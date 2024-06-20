@@ -24,6 +24,7 @@ setup(
     },
     install_requires=[
         "pandas",
+        "numpy",
         "scikit-learn",
         "dill",
         "tqdm",
